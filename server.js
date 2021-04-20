@@ -31,10 +31,13 @@ app.post('/login', (req, res) => {
         res.redirect('/login');
     }
     else {
-        res.redirect('/');
-        user1.loggedIn = true;
-        console.log(user1.username, user1.loggedIn);
+        res.redirect('/user');
+        users.find(user => user === user1).loggedIn = true;
     }
+})
+
+app.get('/user', (req, res) => {
+    res.render('userHome.ejs', { user: users.find(user => user.loggedIn), books });
 })
 
 
