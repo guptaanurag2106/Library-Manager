@@ -12,7 +12,7 @@ To install this you have to install a number of packages:
 2. Run `npm install express ejs body-parser`
 3. Run `npm i -D nodemon`
 4. To start the server run `npm start watch`
-5. next go to `localhost://5000`
+5. next go to `localhost:5000`
 
 **HomePage**
 ![HomePage](https://user-images.githubusercontent.com/75490384/116002925-81fa7480-a619-11eb-95b9-4569d5bb2912.png)
