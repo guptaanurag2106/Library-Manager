@@ -9,7 +9,7 @@ the books and issue new books. The other features will soon be added.
 **Installing**
 To install this you have to install a number of packages:
 1. Run `npm init -y`
-2. Run `npm install express ejs body-parser'
+2. Run `npm install express ejs body-parser`
 3. Run `npm i -D nodemon`
 4. To start the server run `npm start watch`
 5. next go to `localhost://5000`
