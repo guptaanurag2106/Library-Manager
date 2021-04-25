@@ -15,7 +15,36 @@
                     Genre: <%= book.genre %>
                 </p>
                 <p>
+                    Summary: <%= book.summary %><h1>Home</h1>
+<div>
+    <a href="/login">Login</a>
+    <h2>List of books</h2>
+    <% if (books.length>0 ){ %>
+        <% books.forEach(book=> { %>
+            <span>
+                <h2>
+                    Title: <%= book.title %>
+                </h2>
+                <h3>
+                    Author: <%= book.author %>
+                </h3>
+                <h3>
+                    Publisher: <%= book.publisher %>
+                </h3>
+                <p>
+                    Genre: <%= book.genre %>
+                </p>
+                <p>
                     Summary: <%= book.summary %>
+                </p>
+                <br>
+            </span>
+            <%}) %>
+                <%} %>
+                    <% users.forEach(user=> user.loggedIn=false)%>
+
+
+</div>
                 </p>
             </span>
             <%}) %>
