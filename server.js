@@ -14,7 +14,7 @@ const port = 5000;
 app.set('view-engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index.ejs', { books });
+    res.render('index.ejs', { books, users });
 
 })
 
@@ -40,6 +40,9 @@ app.get('/user', (req, res) => {
     res.render('userHome.ejs', { user: users.find(user => user.loggedIn), books });
 })
 
+app.get('/get-book', (req, res) => {
+    res.render('get-book.ejs');
+})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
